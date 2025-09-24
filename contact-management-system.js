@@ -58,6 +58,14 @@ function searchContact() {
     console.log('-----------');
     console.log('Search Contact');
     console.log('-----------');
+
+    const searchResults = [];
+
+    const searchedItem = prompt("SEARCH CONTACT : ");
+    for(let contact of contacts) {
+        if (contact.name.includes(searchedItem)) searchResults.push(contact);
+    }
+    viewContact(searchResults);
 }
 
 getInfo();

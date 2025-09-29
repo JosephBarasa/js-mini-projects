@@ -1,7 +1,5 @@
 const prompt = require('prompt-sync')();
 
-
-
 //function to get the position that a user selects
 
 function getPosition(turn, board) {
@@ -56,5 +54,3 @@ while (turnCount < 9) {
     turnCount++
     console.log(` ${turn} - your turn to play.`)
 }
-
-
